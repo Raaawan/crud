@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-----------------------------------------------start fav icon and title  ---------------------------------------------------------->
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon" />
+    <title>Bookmark</title>
+    <!-----------------------------------------------end fav icon and title  ---------------------------------------------------------->
+    <!-----------------------------------------------start google fonts  ---------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-----------------------------------------------end google fonts  ---------------------------------------------------------->
+
+    <!-----------------------------------------------start css links  ---------------------------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-----------------------------------------------end css links  ---------------------------------------------------------->
+  </head>
+  <body>
+    <!-----------------------------------------------start body section  ---------------------------------------------------------->
+    <div class="bookmark position-relative py-5">
+      <div
+        class="container">
+        <div class="bookmark-title">
+        <h1 class="py-3 position-relative">Bookmarker</h1>
+        </div>
+        <div class="dots pt-4">.....................................................................................................................................................................................................................................................................................................................................................................................</div>
+
+        <div class="bookmark-form pt-4">
+            <div class="bookmark-form-title">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+            <div class="bookmark-form-name py-2">
+                <label for="siteName" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name
+                </label>
+        <input type="text" class="form-control" id="siteName" oninput="validateName()" placeholder="Bookmark Name">
+                
+
+            </div>
+            <div class="bookmark-form-url py-2">
+                <label for="siteURL" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+        <input type="text" class="form-control" id="siteURL"  oninput="validateURL()" placeholder="Website URL">
+                
+
+            </div>
+            <div class="bookmark-form-button py-2">
+                <button class="btn btn-submit px-5" id="submit" onclick="addWebsite()" >Submit</button>
+
+            </div>
+            
+        </div>
+        <div class="dots pt-4">.....................................................................................................................................................................................................................................................................................................................................................................................</div>
+
+        <div class="bookmark-table">
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                  <tr><th class="text-capitalize">index</th>
+                  <th class="text-capitalize">Website Name</th>
+                  <th class="text-capitalize">Visit</th>
+                  <th class="text-capitalize">Delete</th>
+                </tr></thead>
+                <tbody id="tableData">
+                    
+                </tbody>
+              </table>
+        </div>
+        <div class="errors d-none position-absolute" id="error">
+          <div class="circles d-flex">
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+          </div>
+          <div class="error-title " >
+          <h4>
+            Site Name or Url is not valid, Please follow the rules below :
+          </h4>
+          <ul>
+            
+              <li>
+                <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                contain at least 3 characters
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a valid one
+              </li>
+            
+          </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-----------------------------------------------end body section  ---------------------------------------------------------->
+    <!-----------------------------------------------start js links  ---------------------------------------------------------->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-----------------------------------------------end js links  ---------------------------------------------------------->
+  </body>
+</html>

@@ -1,0 +1,99 @@
+.bookmark{
+    background-image: linear-gradient(to right, #f6dbb7,#f9e7cf, #F7ECDE);
+}
+
+.bookmark .container .bookmark-title{
+    width: 21%;
+    margin: 0 auto;
+}
+.bookmark .container .bookmark-title h1{
+    font-family: "Pacifico";
+    color: #352e28;
+    font-size: 50px;
+    z-index: 2;
+    text-align: center;
+}
+.bookmark .container .bookmark-title h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-image: linear-gradient(to top, #fec260,#f3e0c0);
+    transition: height .5s;
+    z-index: -1;
+}
+.bookmark .container .bookmark-title h1:hover::after{
+    height: 50%;
+
+}
+.bookmark .container .bookmark-form .bookmark-form-title h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #18622f, #ebed13);
+    text-align: center;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.bookmark-form-button{
+width: 10%;
+margin: 0 auto;
+}
+.btn-submit{
+    background-color: #d1512d;
+    border-color: #d1512d;
+    color: #fff;
+}
+.btn-submit:hover{
+    background-color: #bb4120;
+    border-color: #a03315;
+    color: #fff;
+}
+.errors{
+    background-color: white;
+    top: 30%;
+    border-radius: 15px;
+    left: 36%;
+    width: 30%;
+    padding: 30px;
+}
+.errors .circles span{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.errors .circles span:nth-child(1){
+    background-color: #f15f5d;
+}.errors .circles span:nth-child(2){
+    background-color: #febe2e;
+}.errors .circles span:nth-child(3){
+    background-color: #4db748;
+}
+
+.errors .error-title h4{
+    font-size: 22px;
+    padding-top: 25px;
+    line-height: 1.3;
+    color: #352e28;
+    font-weight: 700;
+}
+.errors .error-title ul{
+    list-style: none;
+    padding-left: 0;
+}
+.errors .error-title ul{
+    font-size: 18px;
+    padding-top: 15px;
+}
+.errors .error-title ul i{
+    color: #bb4120;
+}
